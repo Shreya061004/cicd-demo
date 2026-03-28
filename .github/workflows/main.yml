@@ -9,18 +9,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v3
+   steps:
+  - name: Checkout Code
+    uses: actions/checkout@v3
 
-      - name: Build Step
-        run: echo "Build successful"
+  - name: AWS Build Stage
+    run: echo "Simulating AWS CodeBuild"
 
-      - name: Test Step
-        run: echo "Test successful"
+  - name: AWS Deploy Stage
+    run: echo "Simulating AWS CodeDeploy"
 
-      - name: Deploy Step
-        run: echo "Deploy successful"
-
-      - name: Monitoring Step
-        run: echo "Monitoring application health" 
+  - name: AWS Monitoring Stage
+    run: echo "Simulating AWS CloudWatch monitoring"
